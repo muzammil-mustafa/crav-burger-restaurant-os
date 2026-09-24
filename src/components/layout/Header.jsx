@@ -82,11 +82,11 @@ export const Header = ({ onOpenNewOrder }) => {
 
         {/* GitHub Repository Link */}
         <a
-          href="https://github.com/muzamilmustafa"
+          href="https://github.com/muzammil-mustafa/crav-burger-restaurant-os"
           target="_blank"
           rel="noreferrer"
           className="btn-icon"
-          title="View GitHub Portfolio & Code"
+          title="View GitHub Repository"
           aria-label="GitHub Profile"
         >
           <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">

@@ -207,8 +207,8 @@ restaurant-dashboard/
 ## 👤 Author
 
 **Muzamil Mustafa**
-* GitHub: [@muzamilmustafa](https://github.com/)
-* Project: [CRAV Burger Restaurant Management OS](https://github.com/)
+* GitHub: [@muzammil-mustafa](https://github.com/muzammil-mustafa)
+* Project: [CRAV Burger Restaurant Management OS](https://github.com/muzammil-mustafa/crav-burger-restaurant-os)
 
 ---
 
