@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="cravFlameGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF5722"/>
+      <stop offset="100%" stop-color="#DE3618"/>
+    </linearGradient>
+    <linearGradient id="cravBunGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FDB813"/>
+      <stop offset="100%" stop-color="#E68A00"/>
+    </linearGradient>
+    <linearGradient id="cravPattyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3D2010"/>
+      <stop offset="100%" stop-color="#1E1008"/>
+    </linearGradient>
+    <filter id="cravShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#DE3618" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Background Circle Badge -->
+  <circle cx="32" cy="32" r="30" fill="#18100A" stroke="#DE3618" stroke-width="3" filter="url(#cravShadow)" />
+  <circle cx="32" cy="32" r="27.5" fill="none" stroke="#FDB813" stroke-width="1.2" stroke-dasharray="3 2" opacity="0.85" />
+
+  <!-- Flame Accent on Top -->
+  <path d="M32 9 C30 13 28 14 26 17 C25 19 26 21 28 22 C29 20 31 18 32 15 C33 18 35 20 36 22 C38 21 39 19 38 17 C36 14 34 13 32 9 Z" fill="url(#cravFlameGrad)" />
+
+  <!-- Top Toasted Brioche Bun -->
+  <path d="M16 26 C16 19 23 16 32 16 C41 16 48 19 48 26 C48 27.5 47 28 45 28 L19 28 C17 28 16 27.5 16 26 Z" fill="url(#cravBunGrad)" />
+
+  <!-- Sesame Seeds -->
+  <ellipse cx="26" cy="21" rx="1.2" ry="0.6" fill="#FFF8F0" transform="rotate(-15 26 21)" />
+  <ellipse cx="32" cy="19.5" rx="1.2" ry="0.6" fill="#FFF8F0" />
+  <ellipse cx="38" cy="21.5" rx="1.2" ry="0.6" fill="#FFF8F0" transform="rotate(20 38 21.5)" />
+  <ellipse cx="30" cy="24" rx="1" ry="0.5" fill="#FFF8F0" transform="rotate(10 30 24)" />
+
+  <!-- Crisp Lettuce Wave -->
+  <path d="M16 30 C18 28.5 20 31 23 29.5 C26 28 29 31 32 29.5 C35 28 38 31 41 29.5 C44 28 46 30 48 29.5 L48 31.5 L16 31.5 Z" fill="#22C55E" />
+
+  <!-- Melted Cheddar Drip Layer -->
+  <path d="M15 32 L49 32 L47.5 35.5 C46 36.5 44 35 42 35 C40 37.5 37 38.5 35 35.5 C33 34 31 37 28 37 C25 37 23 34 20 36.5 C18.5 38 17 36 15 34 Z" fill="#FDB813" />
+
+  <!-- Hand-Smashed Meat Patty with Crispy Edges -->
+  <path d="M14 36 C13.5 36 13 36.5 13.5 37.5 C14 38.5 14.5 38.5 15.5 39 C16.5 39.5 18 39 19.5 39.5 C21 40 23 39.5 25 40 C27 40.5 30 40 33 40.5 C36 41 39 40 42 40.5 C45 41 47.5 39.5 49 39 C50 38.5 50.5 37.5 50 36.8 C49.5 36 48.5 36 47 36 Z" fill="url(#cravPattyGrad)" />
+
+  <!-- Bottom Brioche Bun -->
+  <path d="M17 42 L47 42 C48 42 49 43 48 44 C47 46.5 40 48 32 48 C24 48 17 46.5 16 44 C15 43 16 42 17 42 Z" fill="url(#cravBunGrad)" />
+
+  <!-- CRAV Wordmark in Retro Marker Font -->
+  <text x="32" y="56" font-family="'Nunito', 'Arial Black', sans-serif" font-weight="900" font-size="7.5" fill="#FAEDE1" text-anchor="middle" letter-spacing="1">CRAV</text>
+</svg>

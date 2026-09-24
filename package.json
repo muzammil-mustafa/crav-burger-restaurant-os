@@ -1,0 +1,38 @@
+{
+  "name": "crav-burger-restaurant-os",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Production-grade Restaurant Management & Flat-Top Kitchen Dispatch Dashboard built with React 19, custom CSS design system, and LocalStorage state persistence. Inspired by the CRAV Burger brand aesthetic.",
+  "author": "Muzamil Mustafa",
+  "license": "MIT",
+  "keywords": [
+    "restaurant-management",
+    "admin-dashboard",
+    "react19",
+    "pos-system",
+    "kitchen-display-system",
+    "kanban-order-pipeline",
+    "crav-burger",
+    "vite",
+    "localstorage"
+  ],
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "oxlint",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "lucide-react": "^1.48.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.7",
+    "@vitejs/plugin-react": "^6.1.1",
+    "oxlint": "^1.81.0",
+    "vite": "^8.3.0"
+  }
+}

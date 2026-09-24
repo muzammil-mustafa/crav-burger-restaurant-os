@@ -1,0 +1,311 @@
+/* ==========================================================================
+   CRAV BURGER — Smashed Fresh, Bold Flavor
+   Design System & Global Variables
+   ========================================================================== */
+
+:root {
+  /* CRAV Dark Theme (Charred Flat-Top & Smoked Ember) */
+  --bg-app: #120c08;
+  --bg-sidebar: #18100a;
+  --bg-header: rgba(24, 16, 10, 0.88);
+  --bg-card: #1e140d;
+  --bg-card-hover: #261a11;
+  --bg-elevated: #2d1e14;
+  --bg-input: #1a110a;
+  --bg-muted: #382518;
+
+  --border-subtle: rgba(245, 227, 205, 0.08);
+  --border-strong: rgba(245, 227, 205, 0.16);
+  --border-focus: #ff451a;
+
+  --text-primary: #faede1;
+  --text-secondary: #c9b4a1;
+  --text-tertiary: #8f7966;
+  --text-inverse: #120c08;
+
+  /* CRAV Brand Colors */
+  --crav-red: #ff451a;
+  --crav-red-hover: #e0320a;
+  --crav-red-glow: rgba(255, 69, 26, 0.25);
+
+  --crav-cheddar: #fdb813;
+  --crav-cheddar-hover: #e5a408;
+  --crav-cheddar-glow: rgba(253, 184, 19, 0.25);
+
+  --crav-cream: #f5e3cd;
+  --crav-patty-brown: #24170e;
+  --crav-pickle-green: #22c55e;
+  --crav-smoke-purple: #a855f7;
+
+  /* Status Colors */
+  --status-pending: #fdb813;
+  --status-preparing: #ff451a;
+  --status-ready: #38bdf8;
+  --status-delivered: #22c55e;
+  --status-cancelled: #ef4444;
+
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 6px 16px rgba(0, 0, 0, 0.45);
+  --shadow-lg: 0 16px 36px rgba(0, 0, 0, 0.65);
+  --shadow-flame: 0 4px 20px -2px rgba(255, 69, 26, 0.35);
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 26px;
+  --radius-full: 9999px;
+
+  --font-display: 'Nunito', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-marker: 'Permanent Marker', cursive, sans-serif;
+  --font-body: 'Plus Jakarta Sans', system-ui, sans-serif;
+
+  --transition-fast: 160ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 260ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* CRAV Light Theme (Toasted Brioche & Butter Cream - exact crav-burger.framer.website aesthetic!) */
+[data-theme="light"] {
+  --bg-app: #f5e3cd;
+  --bg-sidebar: #faeee0;
+  --bg-header: rgba(250, 238, 224, 0.92);
+  --bg-card: #fff9f2;
+  --bg-card-hover: #fcf1e3;
+  --bg-elevated: #ffffff;
+  --bg-input: #eee0ce;
+  --bg-muted: #e4d0ba;
+
+  --border-subtle: rgba(36, 23, 14, 0.1);
+  --border-strong: rgba(36, 23, 14, 0.2);
+  --border-focus: #de3618;
+
+  --text-primary: #1e130a;
+  --text-secondary: #574130;
+  --text-tertiary: #8a705b;
+  --text-inverse: #ffffff;
+
+  --crav-red: #de3618;
+  --crav-red-hover: #be280d;
+  --crav-red-glow: rgba(222, 54, 24, 0.2);
+
+  --crav-cheddar: #f59e0b;
+  --crav-cheddar-hover: #d97706;
+  --crav-cheddar-glow: rgba(245, 158, 11, 0.2);
+
+  --crav-cream: #f5e3cd;
+  --crav-patty-brown: #24170e;
+  --crav-pickle-green: #15803d;
+  --crav-smoke-purple: #7e22ce;
+
+  --status-pending: #d97706;
+  --status-preparing: #de3618;
+  --status-ready: #0284c7;
+  --status-delivered: #16a34a;
+  --status-cancelled: #dc2626;
+
+  --shadow-sm: 0 2px 4px rgba(36, 23, 14, 0.05);
+  --shadow-md: 0 8px 18px -2px rgba(36, 23, 14, 0.09);
+  --shadow-lg: 0 18px 36px -4px rgba(36, 23, 14, 0.14);
+  --shadow-flame: 0 4px 18px rgba(222, 54, 24, 0.25);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: var(--font-body);
+  background-color: var(--bg-app);
+  color: var(--text-primary);
+  font-size: 14px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Headings with CRAV heavy display typography */
+h1, h2, h3, h4, h5, h6, .brand-font {
+  font-family: var(--font-display);
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  color: var(--text-primary);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-strong);
+  border-radius: var(--radius-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-tertiary);
+}
+
+/* Base button utilities */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.15rem;
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  border-radius: var(--radius-md);
+  transition: all var(--transition-fast);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--crav-red), #e62f0a);
+  color: #ffffff;
+  box-shadow: var(--shadow-flame);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.1);
+  box-shadow: 0 6px 22px rgba(255, 69, 26, 0.45);
+}
+
+.btn-cheddar {
+  background: linear-gradient(135deg, var(--crav-cheddar), #e69d05);
+  color: #120c08;
+  font-weight: 900;
+  box-shadow: 0 4px 16px var(--crav-cheddar-glow);
+}
+
+.btn-cheddar:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.08);
+}
+
+.btn-secondary {
+  background: var(--bg-card);
+  color: var(--text-primary);
+  border: 1px solid var(--border-strong);
+}
+
+.btn-secondary:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--border-focus);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--text-primary);
+  border: 1px solid var(--border-strong);
+}
+
+.btn-outline:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--text-secondary);
+}
+
+.btn-danger {
+  background: rgba(239, 68, 68, 0.15);
+  color: #ef4444;
+  border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+.btn-danger:hover {
+  background: #ef4444;
+  color: #ffffff;
+}
+
+.btn-sm {
+  padding: 0.35rem 0.75rem;
+  font-size: 0.775rem;
+  border-radius: var(--radius-sm);
+}
+
+.btn-icon {
+  width: 38px;
+  height: 38px;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-md);
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-secondary);
+  transition: all var(--transition-fast);
+}
+
+.btn-icon:hover {
+  color: var(--text-primary);
+  background: var(--bg-elevated);
+  border-color: var(--border-strong);
+}
+
+/* Retro CRAV Sticker Tags */
+.crav-sticker {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 3px 8px;
+  border-radius: var(--radius-sm);
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.crav-sticker-red {
+  background-color: var(--crav-red);
+  color: #ffffff;
+}
+
+.crav-sticker-cheddar {
+  background-color: var(--crav-cheddar);
+  color: #120c08;
+}
+
+.crav-sticker-dark {
+  background-color: var(--crav-patty-brown);
+  color: #faede1;
+  border: 1px solid rgba(250, 237, 225, 0.2);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes scaleUp {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-scale-up {
+  animation: scaleUp 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
